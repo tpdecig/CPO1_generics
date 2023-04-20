@@ -26,7 +26,7 @@ Adaptez aussi les déclarations d'arbres dans les exemples de la méthode `main`
 
 ![un chat ... perché](https://github.com/tpdecig/CPO1_generics/blob/main/assets/catOnTree.png?raw=true)
 
-- L'application `app.SauveUnChat` lit un arbre stocké sous forme de fichier (par exemple le ficher `inputExample/bel_arbre.txt`.
+- L'application `app.SauveUnChat` lit un arbre stocké sous forme de fichier (par exemple le ficher `inputExample/bel_arbre.txt` qui contient un arbre **ressemblant** à l'arbre de l'image ci-dessus, mais pas identique car nous manipulons des arbres binaires quand celui de la figure .... ne l'est pas !).
 
 Le nom du fichier est donné en paramètre au lancement du programme. Ce fichier contient des lignes d'entiers. Chaque ligne commence par le numéro d'un noeud suivi de la liste des numéros de ses noeuds fils. 
 
