@@ -1,12 +1,14 @@
 # Les génériques à la rescousse !
 ## 1 - Etat des lieux
-1) Compilez et exécutez la classe `ArbreBinaireChaine`.
-Examinez son code pour voir si vous comprenez bien ce que permet cette classe et comment elle le fait. 
+Compilez et exécutez la classe `ArbreBinaireChaine`.
+Débrouillez-vous en ligne de commande pour que vos exécutables aillent dans un dossier `bin`à côté du dossier `src`.
+
+Examinez le code de cette classe pour voir si vous comprenez bien ce que permet cette classe et comment elle le fait. 
 En particulier, êtes-vous capable d'expliquer pourquoi une modification d'un noeud d'un arbre fait que le contenu 
 de l'autre arbre est aussi modifié (était-ce le cas pour l'implémentation d'arbre binaire en Swift sous forme d'`enum` ?).
 
 ## 2 - Interfacez-vous
-2) Créer une interface `ArbreBinaireChaine` depuis les méthodes principales de la classe `ArbreBinaireNonGenerique`
+Créer une interface `ArbreBinaireChaine` depuis les méthodes principales de la classe `ArbreBinaireNonGenerique`
 Indiquer que cette classe implémente l'interface.
 Recompilez et exécutez la classe `ArbreBinaireNonGenerique`, celle-ci doit s'exécuter de façon inchangée à ce que nous avions précédemment
 (seule l'architecture du code a été complétée, pas ses fonctionnalités).
@@ -21,7 +23,13 @@ Par transformation de la classe `ArbreBinaireString`, proposez une classe `Arbre
 Adaptez aussi les déclarations d'arbres dans les exemples de la méthode `main` de façon à pouvoir exécuter cette classe et qu'elle produise le même résultat que précédemment. En effet : on vient de rendre notre architecture de code plus générique / réutilisable, il n'y a pas de raison qu'en faisant ça on ne puisse pas avoir le même service qu'avant, simplement maintenant il faut préciser que vous voulez des arbres stockant des `String` (dans les exemples d'arbres créés ici).
 
 ## 5 - Sauvons un chat
-- L'application `app.SauveUnChat` lit un arbre stocké sous forme de fichier. Le nom du fichier est donné en paramètre au lancement du programme. Ce fichier contient des lignes d'entiers. Chaque ligne commence par le numéro d'un noeud suivi de la liste des numéros de ses noeuds fils. 
+
+![un chat ... perché](https://github.com/tpdecig/CPO1_generics/blob/main/assets/catOnTree.png?raw=true)
+
+- L'application `app.SauveUnChat` lit un arbre stocké sous forme de fichier (par exemple le ficher `inputExample/bel_arbre.txt`.
+
+Le nom du fichier est donné en paramètre au lancement du programme. Ce fichier contient des lignes d'entiers. Chaque ligne commence par le numéro d'un noeud suivi de la liste des numéros de ses noeuds fils. 
+
 - Une fois l'arbre chargé en mémoire sous la forme d'un `ArbreBinaire`, l'app demande à l'utilisateur d'indiquer sur quelle noeud il a vu un chat perché. 
 - Ce chat ne sait pas descendre de l'arbre, il faut donc aller le chercher et pour ça savoir par quels noeuds passer. C'est l'objectif de la fonction `chercheLeChat` qui affiche la liste des noeuds par lesquels il faut passer pour aller chercher le chat.
 
