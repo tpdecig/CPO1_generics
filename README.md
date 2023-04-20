@@ -27,6 +27,7 @@ Adaptez aussi les déclarations d'arbres dans les exemples de la méthode `main`
 
 Compilez et exécutez cette classe puis indiquez un noeud où pourrait se percher le chat.
 Vérifiez que le chemin indiqué est bien correct.
+
 ----
 # Etudiants en avance : 
 
